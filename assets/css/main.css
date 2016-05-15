@@ -3,6 +3,9 @@ body {
     margin: 0;
     padding: 0;
 }
+html, body {
+    max-width:100%;
+}
 
 html, body, #container{
   height: 100%;
@@ -41,8 +44,8 @@ body > #container{
 
 #nav-bar {
     position: absolute;
-    background-color: rgb(30,30,30);
-    height: 5.6em;
+    background-color: rgb(30, 30, 30);
+    height: 7.6em;
     margin: 0 auto;
     z-index: -10000000;
     width: 100%;
@@ -54,11 +57,11 @@ ul#block_one{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    margin-top: -3.03em;
-    margin-left: -28em;
+    margin-top: -0.03em;
+    margin-left: auto;
     text-align: center;
 }
-ul#block_two{
+/*ul#block_two{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -66,7 +69,7 @@ ul#block_two{
     margin-top: -1.15em;
     margin-left: 27em;
     text-align: center;
-}
+}*/
 li{
     display: inline;
 }
@@ -92,10 +95,11 @@ li a:hover{
 }
 /*Articles stuff*/
 .latest_articles img{
-    width: 50em;
-    height: 15em;
+    /*height: 15em;*/
     margin-left: auto;
     margin-right: auto;
+    width: 40vw;
+    max-width: 20em;
 
 }
 
@@ -105,6 +109,14 @@ li a:hover{
 }
 
 .latest_articles{
+    margin-top: 2em;
+    text-align: center;
+}
+.guidelines{
+    margin-top: 2em;
+    text-align: left;
+}
+.normal_text{
     margin-top: 2em;
     text-align: center;
 }
@@ -128,13 +140,28 @@ li a:hover{
 
 .latest_articles h4{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 50em;
+    max-width: 50em;
     font-weight: 600;
 
     margin-left: auto;
     margin-right: auto;
 }
+.guidelines h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50em;
+    font-weight: 500;
 
+    margin-left: auto;
+    margin-right: auto;
+}
+.normal_text h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50em;
+    font-weight: 500;
+
+    margin-left: auto;
+    margin-right: auto;
+}
 .article_info{
   font-weight: bold;
 }
@@ -148,7 +175,7 @@ li a:hover{
    position: relative;
    z-index: 10;
    margin-top: -3em;
-    background-color: rgb(30,30,30);
+    background-color: rgb(30, 30, 30);
     height: 5.6em;
     width: 100%;
     opacity: 1;
@@ -185,9 +212,10 @@ li a:hover{
 }
 
 hr{
-    width:100em;
+    width:60vw;
     height:0.3px;
     background: black;
+    max-width: 50em;
 }
 
 .page_title{
@@ -203,4 +231,21 @@ hr{
 }
 .faq_title{
   font-style: italic;
+}
+
+/*RESPONSIVE*/
+/*@media only screen and (max-width: 547px) {
+    #nav-bar {
+        height: 8.6em;
+    }
+}
+
+@media only screen and (max-width: 278px) {
+    #nav-bar {
+        height: 9.6em;
+    }
+}*/
+
+#disqus_thread {
+	padding: 5em;
 }
